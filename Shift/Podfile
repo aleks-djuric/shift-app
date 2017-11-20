@@ -1,0 +1,32 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, ’10.0’
+
+target 'Shift' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Shift
+  
+  #Database
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+
+  #Password Check
+  pod ‘Navajo-Swift’
+
+  #Calendar
+  pod 'JTAppleCalendar'
+
+  target 'ShiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ShiftUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
